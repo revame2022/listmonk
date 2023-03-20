@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/admin/custom.*",
-      "destination": "https://listmonk.gimcszjh.com"
+      "source": "/admin/:path(^custom.*)",
+      "destination": "https://listmonk.gimcszjh.com/:path*"
     },
     {
       "source": "/api/:path*",
