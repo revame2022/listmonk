@@ -1,10 +1,14 @@
 {
   "rewrites": [
-    { "source": "/admin/:path*", "destination": "/:path*" },
+    {
+      "source": "/admin/custom.*",
+      "destination": "https://listmonk.gimcszjh.com"
+    },
     {
       "source": "/api/:path*",
       "destination": "https://listmonk.gimcszjh.com/e-commerce-api/:path*"
     },
+    { "source": "/admin/:path*", "destination": "/:path*" },
     { "source": "/(.*)", "destination": "https://listmonk.gimcszjh.com" }
   ]
 }
